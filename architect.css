@@ -24,28 +24,55 @@
         .bg_light {
             background-color: rgba(255, 144, 14, 0.10); 
         }
+        
+        .btn_primary
+        {
+            padding: 0 auto;
+            background-color: #FF900E;
+            color: white;
+            padding: 20px  25px;
+            font-weight: 600;
+            font-size: 1.25rem;
+            border-radius: 8px;
+            border: none;
+        }
+        main{
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+        main > section
+        {
+            margin-top: 130px;
+
+        }
+        .text_primary
+        {
+            color: #FF900E;
+        }
 
         /* header styles */
        
 
         /* navbar related styles */
+        
         .navbar {
             justify-content: space-between;
-            align-items: center; /* Vertically align items in the navbar */
-            max-width: 1440px; /* Example max width for content */
-            margin: 0 auto;
+            align-items: center; 
+           
+           
             padding: 0 20px; /* Add some horizontal padding to the navbar */
         }
+        
 
         .brand {
-            font-weight: bold; /* Using keyword for clarity, or 700 */
-            font-size: 45px;
+            font-weight: bold; 
+            font-size: 2.8rem;
             /* Consider removing padding-top/left from brand and applying to navbar or container */
         }
 
         .nav-item {
             list-style: none;
-            margin-left: 30px; /* Adjusted margin for horizontal spacing between nav items */
+            margin-right: 30px; /* Adjusted margin for horizontal spacing between nav items */
             /* Removed margin: 25px; to avoid vertical margin on list items */
         }
 
@@ -54,4 +81,71 @@
             text-decoration: none;
             font-weight: 500; /* Numerical value for 'medium' weight for better consistency */
         }
+        .navbar , .banner{
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+    /* banner related styles */
+    .banner_content
+    {
+        max-width: 850px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .banner_tittle
+    {  
+        font-weight: bold;
+        font-size: 4rem;
+       
+    }
+    .banner_description
+    {
+       
+    }
+    .banner_image
+    {
+        width: 100%;
+    }
+    /* teams and features related styles */
+    .teams
+    {
+        align-items: center;
+        gap: 73px;
+    }
+    .team_image_container
+    {
+        display: grid;
+        grid-template-columns:repeat(2 , 1fr) ;
+        gap: 24px;
+    }
+    .teams_features
+    {
+        max-width:537px ;
+    }
+    .featues_tittle
+    {
+        font-size: 2.8rem;
+        font-weight: bold;
+    }
+    #quick_list
+    {
+        font-weight: 500;
+
+    }
  
+ /* responsive media query */
+
+ @media screen and (max-width:576px) {
+    .navbar , .teams 
+
+    {
+        flex-direction: column;
+    }
+    .team_image_container
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+   
+    
+ }
